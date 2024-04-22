@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 import { SlClose } from "react-icons/sl"
 
 export const ToggleContent = ({ title, children }) => {
@@ -13,12 +13,12 @@ export const ToggleContent = ({ title, children }) => {
             <IoIosArrowDown className='text-xl' onClick={() => setShowInfo(!showInfo)}/>
           </div>
         </div>
-        <div className={`transition-all duration-700 ease-in-out overflow-hidden ${showInfo ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+        <div className={`transition-all duration-700 ease-in-out overflow-hidden ${showInfo ? 'max-h-none opacity-100' : 'max-h-0 opacity-0'}`}>
           {children}
           {showInfo && 
             <div className='flex justify-end w-full px-10'>
               <div className={`transform transition-transform duration-700 rotate-180`}>
-                <SlClose className='text-xl ' onClick={() => setShowInfo(false)} color="firebrick"/>
+                <SlClose className='text-xl' onClick={() => setShowInfo(false)} color="firebrick"/>
               </div>
             </div>
           }

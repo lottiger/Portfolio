@@ -12,6 +12,7 @@ export const App = () => {
     <div className=' overflow-auto max-h-screen bg-gradient-to-b from-black to-stone-500'>
       <Navbar />
       <Hero />
+      
       <ToggleContent title='Education'>
       <Education />
       </ToggleContent>
@@ -24,6 +25,7 @@ export const App = () => {
       <ToggleContent title='About me'>
         <AboutMe />
       </ToggleContent>
+      
     </div>
   )
 }
