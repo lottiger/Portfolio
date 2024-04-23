@@ -18,7 +18,7 @@ export const ToggleContent = ({ title, children }) => {
           {showInfo && 
             <div className='flex justify-end w-full px-10'>
               <div className={`transform transition-transform duration-700 rotate-180`}>
-                <SlClose className='text-xl' onClick={() => setShowInfo(false)} color="firebrick"/>
+                <SlClose className='text-[1.7rem] shadow-md rounded bg-red-700 p-1' onClick={() => setShowInfo(false)} color="stone-200"/>
               </div>
             </div>
           }
