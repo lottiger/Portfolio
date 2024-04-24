@@ -6,12 +6,14 @@ import { Education } from './components/Education'
 import { Experience } from './components/Experience'
 import { Projects } from './components/Projects'
 import { AboutMe } from './components/AboutMe'
+import { SkillIcons } from './components/SkillIcons'
 
 export const App = () => {
   return (
-    <div className=' overflow-auto max-h-screen bg-gradient-to-b from-black to-stone-500'>
+    <div className='overflow-auto max-h-screen bg-gradient-to-b from-black to-stone-500'>
       <Navbar />
       <Hero />
+      <SkillIcons />
       
       <ToggleContent title='Education'>
       <Education />
