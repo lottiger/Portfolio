@@ -1,4 +1,4 @@
-export const Project = ({ id, title, description, images, frontendLink, backendLink }) => {
+export const Project = ({ id, title, description, images, frontendLink, backendLink, prototypeLink }) => {
   return (
     <section className='flex justify-center items-center flex-col py-10 border-b border-stone-500 mx-10 my-5'>
       <h4>{title}</h4>
@@ -11,8 +11,9 @@ export const Project = ({ id, title, description, images, frontendLink, backendL
         </div>
       )}
       <div className="text-xs flex gap-10 mt-5">
-        <a href={frontendLink} target="_blank" rel="noopener noreferrer" className="hover:text-stone-400">View frontend code</a>
+      {frontendLink && <a href={frontendLink} target="_blank" rel="noopener noreferrer" className="hover:text-stone-400">View frontend code</a>}
         {backendLink && <a href={backendLink} target="_blank" rel="noopener noreferrer" className="hover:text-stone-400">View backend code</a>}
+        {prototypeLink && <a href={prototypeLink} target="_blank" rel="noopener noreferrer" className="hover:text-stone-400">View prototype</a>}
       </div>
     </section>
   );

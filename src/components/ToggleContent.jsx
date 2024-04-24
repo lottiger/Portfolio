@@ -6,7 +6,7 @@ export const ToggleContent = ({ title, children }) => {
   const [showInfo, setShowInfo] = useState(false)
 
   return (
-    <div className='text-stone-200 flex-col gap-7 justify-center items-center mt-10'>
+    <div className='text-stone-200 flex-col gap-7 justify-center items-center mt-10 mx-5'>
         <div className='flex justify-between items-center w-full px-10 py-2'>
           <h3 className='text-xl' onClick={() => setShowInfo(!showInfo)}>{title}</h3>
           <div className={`transform transition-transform duration-700 ${showInfo ? 'rotate-180' : ''}`}>

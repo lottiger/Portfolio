@@ -3,31 +3,31 @@ import { Hero } from './components/Hero'
 import { Navbar } from './components/Navbar'
 import { ToggleContent } from './components/ToggleContent'
 import { Education } from './components/Education'
-import { Experience } from './components/Experience'
+import { Experiences } from './components/Experiences'
 import { Projects } from './components/Projects'
 import { AboutMe } from './components/AboutMe'
 import { SkillIcons } from './components/SkillIcons'
+import { Contact } from './components/Contact'
 
 export const App = () => {
   return (
     <div className='overflow-auto max-h-screen bg-gradient-to-b from-black to-stone-500'>
       <Navbar />
+      <Contact />
       <Hero />
       <SkillIcons />
       
-      <ToggleContent title='Education'>
-      <Education />
-      </ToggleContent>
-      <ToggleContent title='Experience'>
-      <Experience />
-      </ToggleContent>
       <ToggleContent title='Projects'>
         <Projects />
       </ToggleContent>
-      <ToggleContent title='About me'>
-        <AboutMe />
+
+      <ToggleContent title='Education'>
+        <Education />
       </ToggleContent>
-      
+
+      <ToggleContent title='Experiences'>
+        <Experiences />
+      </ToggleContent>
     </div>
   )
 }
