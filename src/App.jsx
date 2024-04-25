@@ -8,6 +8,7 @@ import { Projects } from './components/Projects'
 import { AboutMe } from './components/AboutMe'
 import { SkillIcons } from './components/SkillIcons'
 import { Contact } from './components/Contact'
+import { Footer } from './components/Footer'
 
 export const App = () => {
   return (
@@ -25,9 +26,17 @@ export const App = () => {
         <Education />
       </ToggleContent>
 
+      
+      <ToggleContent title='About me'>
+        <AboutMe />
+      </ToggleContent>
+      
+
       <ToggleContent title='Experiences'>
         <Experiences />
       </ToggleContent>
+
+      <Footer />
     </div>
   )
 }

@@ -55,5 +55,6 @@ export const Experiences = () => {
         <Experience key={exp.id} {...exp} />
     ))}
 </div>
+
   )
 }
