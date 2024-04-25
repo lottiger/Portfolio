@@ -5,7 +5,9 @@ export default {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      borderColor: ['last'],
+    },
   },
   plugins: [require('tailwind-scrollbar')],
 }

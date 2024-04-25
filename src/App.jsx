@@ -8,6 +8,7 @@ import { Projects } from './components/Projects'
 import { AboutMe } from './components/AboutMe'
 import { SkillIcons } from './components/SkillIcons'
 import { Contact } from './components/Contact'
+import { MessageForm } from './components/MessageForm'
 import { Footer } from './components/Footer'
 
 export const App = () => {
@@ -35,6 +36,8 @@ export const App = () => {
       <ToggleContent title='Experiences'>
         <Experiences />
       </ToggleContent>
+
+      <MessageForm />
 
       <Footer />
     </div>
