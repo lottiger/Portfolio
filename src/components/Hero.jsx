@@ -7,7 +7,7 @@ export const Hero = () => {
         <p className=' text-stone-200 text-opacity-30 mb-2'>Soon to be</p>
         <img src={image} alt="Linda Löttiger" className="w-[300px] h-[300px] rounded-full object-cover border-0"/>
         <h2 className='text-4xl mt-2 mb-2 '>Front End Developer</h2>
-        <p className=' text-stone-200 text-opacity-30'>Attentive | Committed | Joyful</p>
+        <p className=' text-stone-200'>Attentive | Committed | Joyful</p>
     </div>
   )
 }

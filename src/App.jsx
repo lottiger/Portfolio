@@ -18,6 +18,10 @@ export const App = () => {
       <Contact />
       <Hero />
       <SkillIcons />
+
+      <ToggleContent title='Profile'>
+        <AboutMe />
+      </ToggleContent>
       
       <ToggleContent title='Projects'>
         <Projects />
@@ -26,12 +30,6 @@ export const App = () => {
       <ToggleContent title='Education'>
         <Education />
       </ToggleContent>
-
-      
-      <ToggleContent title='About me'>
-        <AboutMe />
-      </ToggleContent>
-      
 
       <ToggleContent title='Experiences'>
         <Experiences />

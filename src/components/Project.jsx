@@ -2,7 +2,7 @@ export const Project = ({ id, title, description, images, frontendLink, backendL
   return (
     <section className='flex justify-center items-center flex-col py-10 border-b border-stone-500 mx-10 my-5'>
       <h4>{title}</h4>
-      <p className='text-xs mt-1'>{description}</p>
+      <p className='text-sm mt-1'>{description}</p>
       {images && (
         <div className='flex overflow-x-auto scrollbar-thin scrollbar-thumb-stone-200 scrollbar-track-transparent py-3 gap-3 mx-10 max-h-[700px] max-w-[600px]'>
           {images.map((image, index) => (
