@@ -2,7 +2,20 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+* {
+    color: #e7e5e4;
+}
+
 .img-container {
-    width:40px; /* Or any other size you want */
+    width:40px; 
     height: 40px;
   }
+
+  input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: white !important;
+}
+
