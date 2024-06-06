@@ -1,8 +1,8 @@
 import React from 'react'
-import image from '../images/Kurser.png'
 import terapeut from '../images/terapeut.jpg'
 import par from '../images/par.jpg'
 import coach from '../images/coach.jpg'
+import betyg2 from '../images/Betyg2.png'
 
 export const Education = () => {
   return (
@@ -11,7 +11,7 @@ export const Education = () => {
        <h4 >Front End Developer, KYH, Stockholm</h4>
         <p className='pb-2'>2023-2025</p>
         <div className='mx-10 max-h-[700px] max-w-[600px]'>
-        <img src={image} alt="kurser" />
+        <img src={betyg2} alt="kurser" />
         </div>
     </section>
     <section className='flex justify-center items-center flex-col py-10 border-b my-5 border-stone-500 mx-10'>
